@@ -8,9 +8,9 @@ def reformat_languages(languages)
     v.each do |k1,v1|
       new_hash[k1] = v1
       puts k1
-      puts new_hash
+     
       unless new_hash[k1].keys.include?(:style)
-         new_hash[k1][:style] = []
+         new_hash[k1][:style] = [k]
       end
       unless new_hash[k1][:style].include?(k)
         new_hash[k1][:style] << k
