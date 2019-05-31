@@ -11,7 +11,6 @@ def reformat_languages(languages)
       end  
       puts k1
       puts new_hash
-      puts new_hash[k1][:style].nil?
       if new_hash[k1][:style].nil?
          new_hash[k1][:style] = []
       end
