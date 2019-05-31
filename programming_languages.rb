@@ -6,7 +6,9 @@ def reformat_languages(languages)
   
   languages.each do |k,v|
     v.each do |k1,v1|
-      new_hash[k1] = v1
+      if new_hash[k1].nil?
+        new_hash[k1] = v1
+      end  
       puts k1
       puts new_hash
       puts new_hash[k1][:style].nil?
